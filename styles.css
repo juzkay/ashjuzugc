@@ -217,7 +217,7 @@ a {
   display: flex;
   gap: 12px;
   align-items: center;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .social-link {
@@ -247,6 +247,69 @@ a {
   height: 22px;
   fill: currentColor;
   display: block;
+}
+
+.contact-cta {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: flex-start;
+}
+
+.contact-text {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--brand);
+  margin: 0;
+}
+
+.contact-link {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: var(--brand);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border: 1.5px solid var(--brand-border);
+  border-radius: 12px;
+  background: rgba(253, 248, 241, 0.92);
+  transition: all 0.2s ease;
+}
+
+.contact-link:hover {
+  background: rgba(128, 4, 0, 0.1);
+  border-color: rgba(128, 4, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+.email-button {
+  display: inline-flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 28px;
+  border: 1.5px solid var(--brand-border);
+  border-radius: 20px;
+  color: var(--brand);
+  text-decoration: none;
+  background: rgba(253, 248, 241, 0.92);
+  font-weight: 600;
+  font-size: 1.05rem;
+  transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 10px 30px rgba(128, 4, 0, 0.05);
+}
+
+.email-button:hover {
+  transform: translateY(-2px);
+  background: rgba(128, 4, 0, 0.1);
+  border-color: rgba(128, 4, 0, 0.3);
+  box-shadow: 0 14px 34px rgba(128, 4, 0, 0.08);
+}
+
+.email-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
 }
 
 .brand-carousel {
